@@ -22,28 +22,39 @@ public class Main {
         System.out.println("Задание № 3 ");
 
         int[] first1Array = {1, 2, 3};
-
         for (int i = first1Array.length - 1; i >= 0; i--) {
-            System.out.print(first1Array[i] + " ,");
+            if (i != 0) {
+                System.out.print(first1Array[i] + " ,");
+            } else {
+                System.out.print(first1Array[i]);
+            }
         }
         System.out.println();
         double[] second2Array = {1.57, 7.654, 9.986};
         for (int i = second2Array.length - 1; i >= 0; i--) {
-            System.out.print(second2Array[i] + " ,");
+            if (i != 0) {
+                System.out.print(second2Array[i] + " ,");
+            } else {
+                System.out.print(second2Array[i]);
+            }
+        }
+        System.out.println();
+        int[] thirth3Array = new int[4];
+        for (int i = thirth3Array.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(thirth3Array[i] + " ,");
+            } else {
+                System.out.print(thirth3Array[i]);
+            }
         }
         System.out.println();
         System.out.println("Задание № 4 ");
 
         for (int d = 0; d < firstArray.length; d++) {
-
             if (firstArray[d] % 2 != 0) {
                 firstArray[d] = firstArray[d] + 1;
             }
             System.out.println(Arrays.toString(firstArray));
-
-
         }
-
-
     }
 }
